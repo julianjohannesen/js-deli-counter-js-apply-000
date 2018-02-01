@@ -1,4 +1,4 @@
-var katzDeli = [];
+  var katzDeli = [];
 
 //1. Build a function that a new customer will use when entering the deli. The function, `takeANumber`, should accept the current line of people, `katzDeliLine`, along with the new person's name as parameters.
 function takeANumber(katzDeliLine, customer){
@@ -25,7 +25,7 @@ function currentLine(katzDeliLine){
   var arr = [];
   if(katzDeliLine.length !== 0){
     for (var i = 0; i < katzDeliLine.length; i++){
-      arr[i] = `${katzDeliLine[i + 1]}. ${katzDeliLine[i]}`;
+      arr[i] = `${(i + 1)}. ${katzDeliLine[i]}`;
     }
     return "The line is currenlty: " + arr.join(', ') + ".";
   } else {
